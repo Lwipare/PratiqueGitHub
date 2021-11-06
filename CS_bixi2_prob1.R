@@ -31,9 +31,6 @@ for (i in seq_along(dates))
     moisc <- substring(as.character(dates[i]), 6, 7)
     nom <- paste0("OD_2018-", moisc, ".csv")
     print(paste("Processing", nom))
-    databixi <- import(nom)
-
-
-    databixi.f <- rbind(databixi.f,databixi)
+    databixi.f <- rbind(databixi.f,import(nom))
 }
 
