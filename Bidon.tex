@@ -3,6 +3,7 @@
 
 \usepackage{caption}
 \usepackage{natbib}
+\usepackage{tabularx}
 \bibliographystyle{sn-basic}
 
 \begin{document}
@@ -16,38 +17,39 @@ on est dans la branche numero 3
 
 ici c'est la fin du texte\\
 
-\
+
+
 
 \begin{table}[h]
-	\caption{Résultat de germination de spores non stériles}\label{res:germ:tabl}%
-	\begin{tabular}{0.8\textwidth}{@{}p{2cm}ccrr@{}}
-	%	\begin{tabular}{0.8\textwidth}{@{\extracolsep{\hfill}}llllr}
+	\caption{Résultat de germination de spores non stériles}
+	\begin{tabular}{@{}p{2.5cm}*{4}{p{1.6cm}}@{}}
+		%\begin{tabular}{.8\textwidth}{@{extracolsep{hfill}}llllr}
 		%\begin{tabular}{lllll}	
 		
 		
 		\toprule
-		Experiment/  & Nb   & Nb  & Germination & Total lenght\\
-		Specie & spores & germinated & rate &  hyphas mm\\
-		\midrule
+		Experiment/ specie  & Nb spores  & Nb  germinated& Germination rate& Total lenght of hyphas mm\\
+				\midrule
 		Experiment 1 \\
 		R. \emph{irregularis}  & 12   & 9  & 75 \% & 16,3 mm  \\
 		C. \emph{lamellosum} & 13\footnotemark[1] & 1\footnotemark[1] & 8\% & 40,7 mm  \\
-		\hline \\
+	\midrule
 		Experiment 2 \\
 		R. \emph{irregularis}  & 18   & 13  & 72 \% & 16,6 mm  \\
 		F. \emph{mossae}   & 18   & 2  & 11 \% & 56,4 mm  \\
-		\hline \\
+	\midrule
 		
 		Experiment 3 \\
 		R. \emph{irregularis} +\\ 
 		M Medium &24 & 16 & 67 \% & 22,9 mm\\
 		Acrybase & 24 & 15 & 63 \% & 12,3 mm\\
 		H\textsubscript{2}O & 24 & 1 & 4 \% & 2,4 mm\\
-		\hline \\
+		\hline
+	\midrule
+	
 		
-		Experiment 4 & Nb of twins\footnotemark[2] & length
-		\footnotemark[3]& Sucessrate & \begin{tabular}[x]{@{}c@{}}Foo\\bar\end{tabular} \\
-		  & & & & \\
+		Experiment 4 & Nb of twins\footnotemark[2] & Nb of well germinated
+		\footnotemark[3]& Sucessrate & Length not measured \\
 		R. \emph{irregularis}  & 12    & 12  & 100 \% & NA  \\
 		F. \emph{fulgida}   & 18   & 2  & 11 \% & NA  \\
 		\botrule
@@ -60,6 +62,7 @@ ici c'est la fin du texte\\
 		germinated spore gives one germinated well. }
 	
 \end{table}
+
 
 
 %\multicolumn{1}{c}{\multirow{2}{2cm}{Length not measured}}
