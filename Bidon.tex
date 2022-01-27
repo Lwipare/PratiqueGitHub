@@ -4,6 +4,7 @@
 \usepackage{caption}
 \usepackage{natbib}
 \usepackage{tabularx}
+\usepackage{siunitx}
 \bibliographystyle{sn-basic}
 
 \begin{document}
@@ -17,49 +18,34 @@ on est dans la branche numero 3
 
 ici c'est la fin du texte\\
 
-
+table-
 
 
 \begin{table}[h]
-	\caption{Résultat de germination de spores non stériles}
-	\begin{tabular}{@{}p{2.5cm}*{4}{p{1.6cm}}@{}}
-		%\begin{tabular}{.8\textwidth}{@{extracolsep{hfill}}llllr}
-		%\begin{tabular}{lllll}	
-		
-		
+	\caption{Composition des solutions}
+	\begin{tabular}{@{}lSS@{}}
 		\toprule
-		Experiment/ specie  & Nb spores  & Nb  germinated& Germination rate& Total lenght of hyphas mm\\
-				\midrule
-		Experiment 1 \\
-		R. \emph{irregularis}  & 12   & 9  & 75 \% & 16,3 mm  \\
-		C. \emph{lamellosum} & 13\footnotemark[1] & 1\footnotemark[1] & 8\% & 40,7 mm  \\
-	\midrule
-		Experiment 2 \\
-		R. \emph{irregularis}  & 18   & 13  & 72 \% & 16,6 mm  \\
-		F. \emph{mossae}   & 18   & 2  & 11 \% & 56,4 mm  \\
-	\midrule
-		
-		Experiment 3 \\
-		R. \emph{irregularis} +\\ 
-		M Medium &24 & 16 & 67 \% & 22,9 mm\\
-		Acrybase & 24 & 15 & 63 \% & 12,3 mm\\
-		H\textsubscript{2}O & 24 & 1 & 4 \% & 2,4 mm\\
-		\hline
-	\midrule
-	
-		
-		Experiment 4 & Nb of twins\footnotemark[2] & Nb of well germinated
-		\footnotemark[3]& Sucessrate & Length not measured \\
-		R. \emph{irregularis}  & 12    & 12  & 100 \% & NA  \\
-		F. \emph{fulgida}   & 18   & 2  & 11 \% & NA  \\
-		\botrule
+		 & {Milieu M} & {Acrybase}\\
+		  & {Mg l$ ^{-1} $} &{Mg l$ ^{-1} $} \\
+		\midrule
+		 {MgSO$ _{4} $\textperiodcentered 7H$ _{2} $O}& 731 & 36.55 \\
+		{KNO$ _{3} $} & 80 &  \\
+		{KH$ _{2} $PO$ _{4} $} & 4.80 & 9.60\\
+		{KCl} & 65 & \\
+		{(NH$ _{4} $)$ _{2} $SO$ _{4} $} & & 132\\
+		{Ca(NO$ _{3} $)$ _{2} $\textperiodcentered 4H$ _{2} $O} & 288 & 28.80 \\
+		{NH$ _{4} $NO$ _{3} $} & & 130\\
+		\midrule
+		{C$ _{10} $H$ _{14} $N$ _{2} $NaO$ _{8} $(E-6760)} & 8 & 8 \\
+		KI &0.75 & 0.75 \\
+		{MnCl$ _{2} $\textperiodcentered 4(H$ _{2} $O)} & 6.00& 6.00 \\
+			{ZnSO$ _{4} $\textperiodcentered7(H$ _{2} $)} & 2.65& 2.65\\
+			{H$ _{3} $BO$ _{3} $} & 1.50 & 1.50 \\
+			{CuSO$ _{4} $\textperiodcentered7(H$ _{2} $O)} & 0.13& 0.13\\
+			 {Na$ _{2} $MoO$ _{4} $\textperiodcentered2(H$ _{2} $O)}& 0.0024 & 0.0024 \\
+		\bottomrule
 	\end{tabular}
-	\footnotetext{} \footnotetext[1]{One of the twelve well received two
-		linked spores instead of only one. This pair did germinate.}
-	\footnotetext[2]{Two not-linked spores were deposited in each
-		well.}
-	\footnotetext[3]{One or two
-		germinated spore gives one germinated well. }
+
 	
 \end{table}
 
