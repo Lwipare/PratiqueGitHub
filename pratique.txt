@@ -6,3 +6,5 @@ Fichier original, premier dépôt.
 
 Première modification, ajout de cette ligne. Il est 10:36.
 
+OK, voici le texte de la deuxième branche qui je veux 
+voir fusionner sur la branche principale
